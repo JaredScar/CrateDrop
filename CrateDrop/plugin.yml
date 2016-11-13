@@ -1,0 +1,7 @@
+name: CrateDrop
+main: com.core.thewolfbadger.cratedrop.main.Main
+version: 1.0
+commands:
+  cratedrop:
+    description: Drop a crate automatically!
+    usage: /cratedrop

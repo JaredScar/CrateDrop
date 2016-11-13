@@ -1,0 +1,125 @@
+###############
+### Options ###
+###############
+Options:
+    RadiusMin: 100.0
+    RadiusMax: 1000.0
+    DropEach: 8600                         ## drop a crate every x seconds
+    WorldEnabled: 'Hub'
+    CrateMaterialDrop: 'EMERALD_BLOCK'
+    CrateMaterial: 'CHEST'
+    DropFrom: 200                          ## drop the crates from x distance from the ground, this is the y coordinate it drops from
+################
+### Messages ###
+################
+Messages:
+    alert_header: '&6&m--------------------------------------------------------'
+    alert: '&7A crate has been dropped at (&d{X}&7, &d{Y}&7, &d{Z}&7)...'
+    alert_footer: '&6&m--------------------------------------------------------'
+    crate_collected: '&e{PLAYER} &7has collected the crate at (&d{X}&7, &d{Y}&7, &d{Z}&7)...'
+##############
+### Crates ###
+##############
+CrateList:
+- common
+- uncommon
+- rare
+CrateChance:
+- 100
+- 50
+- 20
+######################
+### Crate Commands ###
+######################
+CrateCommands:
+- 'tell {PLAYER} hi there ;) :chance: 100 :next: tell {PLAYER} this is the second command :chance: 100 :end:'
+- ''
+- ''
+Crates:
+    common:
+        title: '&aCommon'
+        rows: 1
+        rewards:
+        - 'DIAMOND'
+        - 'IRON_INGOT'
+        - 'GOLD_INGOT'
+        amount:
+        - 1
+        - 2
+        - 3
+        enchant:
+        - ''
+        - ''
+        - ''
+        displayName:
+        - ''
+        - ''
+        - ''
+        lore:
+        - '1st lore // 2nd lore // 3rd lore'
+        - ''
+        - ''
+        chance:
+        - 100
+        - 100
+        - 100
+    uncommon:
+        title: '&dUncommon'
+        rows: 1
+        rewards:
+        - 'DIAMOND'
+        - 'IRON_INGOT'
+        - 'GOLD_INGOT'
+        amount:
+        - 10
+        - 20
+        - 30
+        enchant:
+        - ''
+        - ''
+        - ''
+        displayName:
+        - ''
+        - ''
+        - ''
+        lore:
+        - ''
+        - ''
+        - ''
+        chance:
+        - 100
+        - 100
+        - 100
+    rare:
+        title: '&cRare'
+        rows: 1
+        rewards:
+        - 'DIAMOND'
+        - 'IRON_INGOT'
+        - 'GOLD_INGOT'
+        - 'DIAMOND_SWORD'
+        amount:
+        - 16
+        - 32
+        - 64
+        - 1
+        enchant:
+        - ''
+        - ''
+        - ''
+        - 'FIRE_ASPECT:1, DAMAGE_ALL:3'
+        displayName:
+        - ''
+        - ''
+        - ''
+        - '&7[&aGOD&7] &a&lSword'
+        lore:
+        - ''
+        - ''
+        - ''
+        - ''
+        chance:
+        - 100
+        - 100
+        - 100
+        - 100
